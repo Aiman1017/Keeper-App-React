@@ -36,7 +36,7 @@ function CreateNote(props) {
 
   return (
     <div>
-      <form className='create-note'>
+      <form>
        {isExpanded ? <input name='title' onChange={handleChange} value={note.title} placeholder='Enter a title' /> : null }
         <textarea name='content' onClick={expand} onChange={handleChange} value={note.content} placeholder='Write a note here' rows={isExpanded ? 3 : 1} />
         <Zoom in={isExpanded}>
